@@ -25,3 +25,27 @@ class Stack:
     def __iter__(self):
         return self.stack.__iter__()
     
+class Queue:
+    def __init__(self):
+        self.queue = []
+
+    def enqueue(self, item):
+        self.queue.append(item)
+
+    def dequeue(self):
+        if len(self.queue) > 0:
+            return self.queue.pop(0)
+        else:
+            return None
+
+    def peek(self):
+        if len(self.queue) > 0:
+            return self.queue[0]
+        else:
+            return None
+
+    def __len__(self):
+        return len(self.queue)
+    
+    def __iter__(self):
+        return self.queue.__iter__()
