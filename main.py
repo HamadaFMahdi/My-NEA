@@ -46,6 +46,3 @@ class Queue:
 
     def __len__(self):
         return len(self.queue)
-    
-    def __iter__(self):
-        return self.queue.__iter__()
