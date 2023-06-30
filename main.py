@@ -19,9 +19,9 @@ class Stack:
         else:
             return None
 
-    def __str__(self):
-        return str(self.stack)
-
     def __len__(self):
         return len(self.stack)
+    
+    def __iter__(self):
+        return self.stack.__iter__()
     
